@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Corona Vírus </title>
+
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./JS/script.js" defer></script>
+
+</head>
+<body>
+    
+    <main>
+
+        <div class="getDatas">
+
+            <h2 id="title"> Inserir Dados: </h2>
+
+          <div class="row"> 
+
+            <h4> Nome: </h4>
+            <input id="nome">
+
+          </div>
+                    
+          <div class="row"> 
+
+            <h4> Idade: </h4>
+            <input type="number" id="idade">
+
+          </div>
+                    
+          <div class="row"> 
+
+            <h4> Sexo: </h4>
+            <input list="sexo" id="genero">
+
+            <datalist id="sexo">
+
+              <option value="Masculino"></option>
+              <option value="Feminino"></option>
+
+            </datalist>
+
+          </div>
+
+          <div class="row"> 
+
+            <h4> Temperatura: </h4>
+            <input type="number" list="temperaturas" id="temperatura">
+
+            <datalist id="temperaturas">
+
+                <option value="42.0"></option>
+                <option value="41.9"></option>
+                <option value="41.8"></option>
+                <option value="41.7"></option>
+                <option value="41.6"></option>
+                <option value="41.5"></option>
+                <option value="41.4"></option>
+                <option value="41.3"></option>
+                <option value="41.2"></option>
+                <option value="41.1"></option>
+                <option value="41.0"></option>
+                <option value="40.9"></option>
+                <option value="40.8"></option>
+                <option value="40.7"></option>
+                <option value="40.6"></option>
+                <option value="40.5"></option>
+                <option value="40.4"></option>
+                <option value="40.3"></option>
+                <option value="40.2"></option>
+                <option value="40.1"></option>
+                <option value="40.0"></option>
+                <option value="39.9"></option>
+                <option value="39.8"></option>
+                <option value="39.7"></option>
+                <option value="39.6"></option>
+                <option value="39.5"></option>
+                <option value="39.4"></option>
+                <option value="39.3"></option>
+                <option value="39.2"></option>
+                <option value="39.1"></option>
+                <option value="39.0"></option>
+                <option value="38.9"></option>
+                <option value="38.8"></option>
+                <option value="38.7"></option>
+                <option value="38.6"></option>
+                <option value="38.5"></option>
+                <option value="38.4"></option>
+                <option value="38.3"></option>
+                <option value="38.2"></option>
+                <option value="38.1"></option>
+                <option value="38.0"></option>
+                <option value="37.9"></option>
+                <option value="37.8"></option>
+                <option value="37.7"></option>
+                <option value="37.6"></option>
+                <option value="37.5"></option>
+                <option value="37.4"></option>
+                <option value="37.3"></option>
+                <option value="37.2"></option>
+                <option value="37.1"></option>
+                <option value="37.0"></option>
+                <option value="36.9"></option>
+                <option value="36.8"></option>
+                <option value="36.7"></option>
+                <option value="36.6"></option>
+                <option value="36.5"></option>
+                <option value="36.4"></option>
+                <option value="36.3"></option>
+                <option value="36.2"></option>
+                <option value="36.1"></option>
+                <option value="36.0"></option>
+
+            </datalist>
+
+          </div>
+
+          <div class="row"> 
+
+            <h4> Origem: </h4>
+            <input type="" id="origem"> 
+
+          </div>
+
+          <div class="row">
+
+            <button id="enviar"> Enviar! </button>
+
+          </div>
+        
+        </div>
+
+        <div class="computados">
+        
+            <h2> Dados: </h2>
+
+            <div class="row"> 
+
+                <h4> Entrevistados: </h4>
+                <p id="total"> 0 </p>
+                <p id="totalPercent"> 0% </p>
+    
+              </div>
+                        
+              <div class="row"> 
+    
+                <h4> Total febril: </h4>
+                <p id="totalFebril"> 0 </p>
+                <p id="totalFebrilPercent"> 0% </p>
+    
+              </div>
+                        
+              <div class="row"> 
+    
+                <h4> Grupo de risco: </h4>
+                <p id="grupoderisco"> 0 </p>
+                <p id="grupoderiscoPercent"> 0% </p>
+    
+              </div>
+    
+              <div class="row"> 
+    
+                <h4> Febris com risco: </h4>
+                <p id="febrisderisco"> 0 </p>
+                <p id="febrisderiscoPercent"> 0% </p>
+    
+              </div>
+    
+              <div class="row"> 
+    
+                <h4> Masculino: </h4>
+                <p id="masc"> 0 </p>
+                <p id="mascPercent"> 0% </p>
+    
+              </div>
+
+              <div class="row"> 
+    
+                <h4> Feminino: </h4>
+                <p id="femin"> 0 </p>
+                <p id="feminPercent"> 0% </p>
+    
+              </div>
+            
+        </div> 
+
+    </main>
+
+</body>
+</html>

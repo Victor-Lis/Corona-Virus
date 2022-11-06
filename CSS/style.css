@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+*{
+
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+main{
+
+    width: 100%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-color: #efefeb;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.getDatas{
+
+    width: 90%;
+    background-color: #fff;
+    border-radius: 10px;
+
+    padding-top: 05%;
+    padding-bottom: 05%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.getDatas > h2{
+
+    padding-bottom: 5%;
+
+}
+
+.getDatas > .row{
+
+    width: 75%;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 2%;
+
+
+}
+
+.row > input{
+
+    width: 50%;
+
+}
+
+.row > h4{
+
+    width: 50%;
+
+}
+
+.row > button{
+
+    border: none;
+    background-color: #efefeb;;
+    padding: 3.5%;
+    font-size: 1rem;
+    border-radius: 10px;
+    transition: 1s;
+
+}
+
+.row > button:hover{
+
+    transition: 1s;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    padding: 3.5%;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.computados{
+
+    margin-top: 5%;
+    width: 90%;
+    background-color: #fff;
+    border-radius: 10px;
+
+    padding-top: 05%;
+    padding-bottom: 05%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.computados > h2{
+
+    padding-bottom: 5%;
+
+}
+
+.computados > .row{
+
+    width: 75%;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 2%;
+
+
+}
+
+.computados > .row > h4{
+
+    width: 65%;
+
+}
+
+.computados > .row > p{
+
+    padding-left: 2%;
+    padding-right: 2%;
+
+}
+
+@media (min-width: 700px) {
+   
+    
+    .row > input{
+
+        padding: 2%;
+        width: 40%;
+
+    }
+
+    .row > h4{
+
+        width: 20%;
+        font-size: 2.5rem;
+
+    }
+
+    .row > button{
+
+        padding: 2.5%;
+        width: 20%;
+        font-size: 1.5rem;
+    
+    }    
+
+    .row > button:hover{
+
+        padding: 2.5%;
+        font-size: 1.5rem;
+
+    }
+
+    .getDatas > h2{
+
+        font-size: 2.5rem;
+
+    }
+
+    .computados > h2{
+
+        font-size: 2.5rem;
+
+    }
+
+    .row > p{
+        
+        font-size: 2.0rem;
+
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#totalPercent{
+
+    color: #fff;
+    cursor:default;
+
+}
+
+#totalPercent::selection{
+    
+    color: #fff;
+
+}
