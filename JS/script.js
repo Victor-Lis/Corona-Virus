@@ -74,7 +74,7 @@ var listData = {
 
 }
 
-if(localStorage.listData){
+if(localStorage.listData != null || localStorage.listData != undefined){
 
     listData = JSON.parse(localStorage.getItem('listData'))
 
@@ -113,8 +113,6 @@ if(localStorage.listData){
 }
 
 inputs.button.addEventListener("click", (e) => {
-
-    document.getElementById('datasProgress').style.display = "flex"
 
     valueInputs.nome = document.getElementById("nome").value
     valueInputs.idade = parseFloat(document.getElementById("idade").value)
