@@ -160,6 +160,12 @@ main{
 
 }
 
+.computados > .row > progress{
+
+    transition: 1s;
+
+}
+
 @media (min-width: 700px) {
    
     
