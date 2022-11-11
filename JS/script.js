@@ -120,15 +120,6 @@ inputs.button.addEventListener("click", (e) => {
     valueInputs.temperatura = parseFloat(document.getElementById("temperatura").value)
     valueInputs.origem = document.getElementById("origem").value
 
-   console.log(valueInputs.nome == " ")
-   console.log(valueInputs.nome.length)
-   console.log(valueInputs.idade < 0)
-   console.log(valueInputs.idade > 105 )
-   console.log(valueInputs.genero == " ")
-   console.log(valueInputs.temperatura < 36.0 || valueInputs.temperatura > 42.0)
-   console.log(valueInputs.origem == " ")
-   console.log(valueInputs.genero.toLowerCase() != 'masculino' && valueInputs.genero.toLowerCase() != 'feminino')
-
     if(valueInputs.nome == " " || valueInputs.nome.length <= 2 || valueInputs.idade < 0 || valueInputs.idade > 105 || valueInputs.genero == " " || valueInputs.genero.toLowerCase() != "feminino" && valueInputs.genero.toLowerCase() != "masculino" || valueInputs.temperatura < 36.0 || valueInputs.temperatura > 42.0 || valueInputs.origem == " "){
 
         list.title.innerHTML = "Preencha corretamente"
