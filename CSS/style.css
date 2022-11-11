@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
 
+::-webkit-scrollbar{
+
+    background-color: #efefeb
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    transition: 1s;
+    background-color: rgb(255, 255, 255);
+
+}
+
 *{
 
     padding: 0;
