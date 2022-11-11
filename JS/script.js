@@ -43,6 +43,21 @@ const list = {
 
 }
 
+var listProgress = {
+
+    totalFebrilPercent: document.getElementById("totalProgess"),
+
+    grupoderiscoPercent: document.getElementById("grupoderiscoProgess"),
+
+    febrisderiscoPercent: document.getElementById("febrisderiscoProgess"),
+
+    mascPercent: document.getElementById("masculinoProgess"),
+
+    feminPercent: document.getElementById("femininoProgess"),
+
+}
+
+
 var listData = {
 
     total: 0,
@@ -69,22 +84,27 @@ if(localStorage.listData){
     listData.totalFebrilPercent = (listData.totalFebril / listData.total) * 100
     list.totalFebril.innerHTML = listData.totalFebril
     list.totalFebrilPercent.innerHTML = listData.totalFebrilPercent.toFixed(2)+"%"
+    listProgress.totalFebrilPercent.value = listData.totalFebrilPercent.toFixed(0)
 
     listData.grupoDeRiscoPercent = (listData.grupoDeRisco / listData.total) * 100
     list.grupoderisco.innerHTML = listData.grupoDeRisco
     list.grupoderiscoPercent.innerHTML = listData.grupoDeRiscoPercent.toFixed(2)+"%"
+    listProgress.grupoderiscoPercent.value = listData.grupoDeRiscoPercent.toFixed(0)
 
     listData.febrisDeRiscoPercent = (listData.febrisDeRisco / listData.total) * 100
     list.febrisderisco.innerHTML = listData.febrisDeRisco
     list.febrisderiscoPercent.innerHTML = listData.febrisDeRiscoPercent.toFixed(2)+"%"
+    listProgress.febrisderiscoPercent.value = listData.febrisDeRiscoPercent.toFixed(0)
 
     listData.MasculinoPercent = (listData.Masculino / listData.total) * 100
     list.masc.innerHTML = listData.Masculino
     list.mascPercent.innerHTML = listData.MasculinoPercent.toFixed(2)+"%"
+    listProgress.mascPercent.value = listData.MasculinoPercent.toFixed(0)
 
     listData.FemininoPercent = (listData.Feminino / listData.total) * 100
     list.femin.innerHTML = listData.Feminino
     list.feminPercent.innerHTML = listData.FemininoPercent.toFixed(2)+"%"
+    listProgress.feminPercent.value = listData.FemininoPercent.toFixed(0)
 
 }else{
   
@@ -93,6 +113,8 @@ if(localStorage.listData){
 }
 
 inputs.button.addEventListener("click", (e) => {
+
+    document.getElementById('datasProgress').style.display = "flex"
 
     valueInputs.nome = document.getElementById("nome").value
     valueInputs.idade = parseFloat(document.getElementById("idade").value)
@@ -150,28 +172,58 @@ inputs.button.addEventListener("click", (e) => {
 
     }
     
+
+    var listProgress = {
+
+        totalFebrilPercent: document.getElementById("totalProgess"),
+    
+        grupoderiscoPercent: document.getElementById("grupoderiscoProgess"),
+    
+        febrisderiscoPercent: document.getElementById("febrisderiscoProgess"),
+    
+        mascPercent: document.getElementById("masculinoProgess"),
+    
+        feminPercent: document.getElementById("femininoProgess"),
+    
+    }
+
     list.total.innerHTML = listData.total
-    list.totalPercent.innerHTML = "100.00%"
 
     listData.totalFebrilPercent = (listData.totalFebril / listData.total) * 100
     list.totalFebril.innerHTML = listData.totalFebril
     list.totalFebrilPercent.innerHTML = listData.totalFebrilPercent.toFixed(2)+"%"
+    listProgress.totalFebrilPercent.value = listData.totalFebrilPercent.toFixed(0)
+
+    if(parseFloat(listData.totalFebrilPercent) < 100){
+
+        list.totalPercent.innerHTML = "00.00%"
+
+    }else{
+
+        list.totalPercent.innerHTML = "100.00%" 
+
+    }
 
     listData.grupoDeRiscoPercent = (listData.grupoDeRisco / listData.total) * 100
     list.grupoderisco.innerHTML = listData.grupoDeRisco
     list.grupoderiscoPercent.innerHTML = listData.grupoDeRiscoPercent.toFixed(2)+"%"
+    listProgress.grupoderiscoPercent.value = listData.grupoDeRiscoPercent.toFixed(0)
 
     listData.febrisDeRiscoPercent = (listData.febrisDeRisco / listData.total) * 100
     list.febrisderisco.innerHTML = listData.febrisDeRisco
     list.febrisderiscoPercent.innerHTML = listData.febrisDeRiscoPercent.toFixed(2)+"%"
+    listProgress.febrisderiscoPercent.value = listData.febrisDeRiscoPercent.toFixed(0)
 
     listData.MasculinoPercent = (listData.Masculino / listData.total) * 100
     list.masc.innerHTML = listData.Masculino
     list.mascPercent.innerHTML = listData.MasculinoPercent.toFixed(2)+"%"
+    listProgress.mascPercent.value = listData.MasculinoPercent.toFixed(0)
 
     listData.FemininoPercent = (listData.Feminino / listData.total) * 100
     list.femin.innerHTML = listData.Feminino
     list.feminPercent.innerHTML = listData.FemininoPercent.toFixed(2)+"%"
+    listProgress.feminPercent.value = listData.FemininoPercent.toFixed(2)
+    listProgress.feminPercent.value = listData.FemininoPercent.toFixed(0)
 
     inputs.nome.value = ""
     inputs.idade.value = null
