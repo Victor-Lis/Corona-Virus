@@ -13,6 +13,15 @@
 
 }
 
+progress::-webkit-progress-bar {
+    background-color: white;
+    border-radius: 7px;
+}
+progress::-webkit-progress-value {
+    background-color: rgb(99, 99, 99);
+    border-radius: 7px;
+}
+
 *{
 
     padding: 0;
@@ -22,12 +31,30 @@
 
 }
 
+body {
+    background: radial-gradient(160rem, rgb(0, 9, 22), rgb(0, 30, 73));
+}
+
+h4 {
+    color: white;
+    filter: drop-shadow(0px 0px 5px rgb(163, 163, 163));
+}
+
+h2 {
+    color: white;
+    filter: drop-shadow(0px 0px 5px rgb(163, 163, 163));
+}
+
+p {
+    color: white;
+}
+
 main{
 
     width: 100%;
     padding-top: 10%;
     padding-bottom: 10%;
-    background-color: #efefeb;
+    background-color: transparent;
 
     display: flex;
     flex-direction: column;
@@ -39,8 +66,11 @@ main{
 .getDatas{
 
     width: 90%;
-    background-color: #fff;
+    background-color: transparent;
+
     border-radius: 10px;
+    box-shadow: 0px 0px 13px rgb(163, 163, 163);
+    border: 2px solid rgb(255, 255, 255);
 
     padding-top: 05%;
     padding-bottom: 05%;
@@ -77,6 +107,11 @@ main{
 
     width: 50%;
 
+    border-radius: 5px;
+    outline: 2px solid rgb(255, 255, 255);
+    background: transparent;
+    box-shadow: 0px 0px 13px rgb(163, 163, 163);
+    color: white;
 }
 
 .row > h4{
@@ -86,26 +121,30 @@ main{
 }
 
 .row > button{
-
-    border: none;
-    background-color: #efefeb;;
     padding: 3.5%;
     font-size: 1rem;
     border-radius: 10px;
     transition: 1s;
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 8px rgb(163, 163, 163);
+    width: 40%;
 
 }
 
 .row > button:hover{
 
-    transition: 1s;
-    border: none;
-    background-color: rgb(0, 0, 0);
-    padding: 3.5%;
-    color: #fff;
+    transition: 0.4s;
     font-size: 1rem;
     border-radius: 10px;
     cursor: pointer;
+    background-color: rgb(100, 75, 6);
+    border: 2px solid rgb(241, 180, 13);
+    scale: 0.9;
+    color: white;
+    box-shadow: 0px 6px 5px rgb(0, 0, 0);
+    padding: 3.5%;
 
 }
 
@@ -113,8 +152,11 @@ main{
 
     margin-top: 5%;
     width: 90%;
-    background-color: #fff;
+    background-color: transparent;
+
     border-radius: 10px;
+    box-shadow: 0px 0px 13px rgb(163, 163, 163);
+    border: 2px solid rgb(255, 255, 255);
 
     padding-top: 05%;
     padding-bottom: 05%;
@@ -155,8 +197,8 @@ main{
 
 .computados > .row > p{
 
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 0;
+    padding-right: 0;
 
 }
 
@@ -171,7 +213,7 @@ main{
     
     .row > input{
 
-        padding: 2%;
+        padding: 1%;
         width: 40%;
 
     }
@@ -185,15 +227,24 @@ main{
 
     .row > button{
 
-        padding: 2.5%;
+        background-color: transparent;
+        border: 2px solid rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 8px rgb(0, 0, 0);
+        padding: 1%;
         width: 20%;
         font-size: 1.5rem;
-    
+        transition: 0.3;   
     }    
 
     .row > button:hover{
 
-        padding: 2.5%;
+        background-color: rgb(177, 177, 177);
+        border: 2px solid rgb(255, 255, 255);
+        scale: 1.1;
+        color: white;
+        box-shadow: 0px 7px 7px rgb(0, 0, 0);
+        padding: 1%;
         font-size: 1.5rem;
 
     }
@@ -216,46 +267,15 @@ main{
 
     }
     
+    progress {
+        border-radius: 7px; 
+        width: 40%;
+        height: 18px;
+        margin-left: -11.5%;
+        box-shadow: 0px 0px 5px rgb(163, 163, 163);
+    }
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #totalPercent{
 
     color: #fff;

@@ -74,9 +74,17 @@ var listData = {
 
 }
 
+console.log(listData)
+
 if(localStorage.listData != null || localStorage.listData != undefined){
 
     listData = JSON.parse(localStorage.getItem('listData'))
+
+    if(listData.total == 0){
+
+        console.log("Error")
+
+    }else if(listData.total != 0){
 
     list.total.innerHTML = listData.total
     list.totalPercent.innerHTML = "100.00%"
@@ -110,6 +118,8 @@ if(localStorage.listData != null || localStorage.listData != undefined){
   
     localStorage.setItem('listData', JSON.stringify(listData))
     
+}
+
 }
 
 inputs.button.addEventListener("click", (e) => {
